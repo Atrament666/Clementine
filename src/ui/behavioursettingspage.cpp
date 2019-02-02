@@ -40,6 +40,9 @@ BehaviourSettingsPage::BehaviourSettingsPage(SettingsDialog* dialog)
   connect(ui_->b_show_tray_icon_, SIGNAL(toggled(bool)),
           SLOT(ShowTrayIconToggled(bool)));
 
+  connect(ui_->playlist_end_action_combobox, SIGNAL(currentIndexChanged(int)), this, SLOT(ValidatePlaylistEndGroup()));
+  connect(ui_->display_confirm_dialog_checkbox, SIGNAL(stateChanged(int)), this, SLOT(ValidatePlaylistEndGroup()));
+
   ui_->doubleclick_addmode->setItemData(0, MainWindow::AddBehaviour_Append);
   ui_->doubleclick_addmode->setItemData(1, MainWindow::AddBehaviour_Load);
   ui_->doubleclick_addmode->setItemData(2, MainWindow::AddBehaviour_OpenInNew);
@@ -220,6 +223,12 @@ void BehaviourSettingsPage::Load() {
       s.value(Playlist::kSortIgnorePrefixList, QString("a, the")).toString());
   s.endGroup();
 
+  s.beginGroup("PlaylistEndHandler");
+  ui_->playlist_end_action_combobox->setCurrentIndex(s.value("playlist_end_action", 0).toInt());
+  ui_->display_confirm_dialog_checkbox->setChecked(s.value("display_confirm_dialog", true).toBool());
+  ui_->confirm_dialog_timeout_spinbox->setValue(s.value("confirm_dialog_timeout", 10).toInt());
+  s.endGroup();
+
   s.beginGroup(PlaylistTabBar::kSettingsGroup);
   ui_->b_warn_close_playlist_->setChecked(
       s.value("warn_close_playlist", true).toBool());
@@ -310,6 +319,12 @@ void BehaviourSettingsPage::Save() {
              ui_->sort_ignore_prefix_list->text());
   s.endGroup();
 
+  s.beginGroup("PlaylistEndHandler");
+  s.setValue("playlist_end_action", ui_->playlist_end_action_combobox->currentIndex());
+  s.setValue("display_confirm_dialog", ui_->display_confirm_dialog_checkbox->isChecked());
+  s.setValue("confirm_dialog_timeout" , ui_->confirm_dialog_timeout_spinbox->value());
+  s.endGroup();
+
   s.beginGroup(PlaylistTabBar::kSettingsGroup);
   s.setValue("warn_close_playlist", ui_->b_warn_close_playlist_->isChecked());
   s.endGroup();
@@ -322,4 +337,10 @@ void BehaviourSettingsPage::ShowTrayIconToggled(bool on) {
   ui_->b_keep_running_->setEnabled(on);
   ui_->b_keep_running_->setChecked(on);
   ui_->b_scroll_tray_icon_->setEnabled(on);
+}
+
+void BehaviourSettingsPage::ValidatePlaylistEndGroup() {
+  ui_->display_confirm_dialog_checkbox->setEnabled(ui_->playlist_end_action_combobox->currentIndex());
+  ui_->confirm_dialog_timeout_spinbox->setEnabled(ui_->display_confirm_dialog_checkbox->isChecked() && ui_->playlist_end_action_combobox->currentIndex());
+  ui_->confirmation_timeout_label->setEnabled(ui_->confirm_dialog_timeout_spinbox->isEnabled());
 }

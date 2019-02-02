@@ -31,6 +31,7 @@
 #include "engines/engine_fwd.h"
 #include "library/librarymodel.h"
 #include "playlist/playlistitem.h"
+#include "playlist/playlistendhandler.h"
 #include "songinfo/streamdiscoverer.h"
 #include "ui/organisedialog.h"
 #include "ui/settingsdialog.h"
@@ -64,6 +65,7 @@ class MultiLoadingIndicator;
 class OSD;
 class Player;
 class PlaylistBackend;
+class PlaylistEndHandler;
 class PlaylistListContainer;
 class PlaylistManager;
 class QueueManager;
@@ -389,6 +391,7 @@ signals:
   PlayBehaviour menu_playmode_;
 
   BackgroundStreams* background_streams_;
+  PlaylistEndHandler* playlist_end_handler_;
 };
 
 #endif  // MAINWINDOW_H
