@@ -233,6 +233,7 @@ set(SOURCES
   playlist/playlistbackend.cpp
   playlist/playlistcontainer.cpp
   playlist/playlistdelegates.cpp
+  playlist/playlistendhandler.cpp
   playlist/playlistfilterparser.cpp
   playlist/playlistfilter.cpp
   playlist/playlistheader.cpp
@@ -531,6 +532,7 @@ set(HEADERS
   playlist/playlistbackend.h
   playlist/playlistcontainer.h
   playlist/playlistdelegates.h
+  playlist/playlistendhandler.h
   playlist/playlistfilter.h
   playlist/playlistheader.h
   playlist/playlistitemmimedata.h

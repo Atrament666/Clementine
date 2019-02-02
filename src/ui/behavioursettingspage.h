@@ -36,6 +36,7 @@ class BehaviourSettingsPage : public SettingsPage {
 
  private slots:
   void ShowTrayIconToggled(bool on);
+  void ValidatePlaylistEndGroup();
 
  private:
   Ui_BehaviourSettingsPage* ui_;

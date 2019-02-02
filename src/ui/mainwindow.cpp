@@ -227,7 +227,8 @@ MainWindow::MainWindow(Application* app, SystemTrayIcon* tray_icon, OSD* osd,
       saved_playback_state_(Engine::Empty),
       doubleclick_addmode_(AddBehaviour_Append),
       doubleclick_playmode_(PlayBehaviour_IfStopped),
-      menu_playmode_(PlayBehaviour_IfStopped) {
+      menu_playmode_(PlayBehaviour_IfStopped),
+      playlist_end_handler_(new PlaylistEndHandler){
   qLog(Debug) << "Starting";
 
   connect(app, SIGNAL(ErrorAdded(QString)), SLOT(ShowErrorDialog(QString)));
@@ -575,6 +576,7 @@ MainWindow::MainWindow(Application* app, SystemTrayIcon* tray_icon, OSD* osd,
   connect(app_->player(), SIGNAL(Stopped()), osd_, SLOT(Stopped()));
   connect(app_->player(), SIGNAL(PlaylistFinished()), osd_,
           SLOT(PlaylistFinished()));
+  connect(app_->player(), SIGNAL(PlaylistFinished()), playlist_end_handler_, SLOT(handle()));
   connect(app_->player(), SIGNAL(VolumeChanged(int)), osd_,
           SLOT(VolumeChanged(int)));
   connect(app_->player(), SIGNAL(VolumeChanged(int)), ui_->volume,
