@@ -14,7 +14,7 @@
 # Maciej Bator, 2019
 # Marcin Lawniczak <marcin.safmb@wp.pl>, 2016
 # Marcin Wu <marcin.wu85@gmail.com>, 2018
-# Mateusz Żochowski, 2017
+# f4026438bc140eb8251ee8a7e846d473, 2017
 # Michał G, 2011
 # Michał Ziąbkowski <mziab@o2.pl>, 2010
 # Michał Trzebiatowski <michtrz@gmail.com>, 2013
@@ -2141,7 +2141,7 @@ msgstr "Wykrywanie błędów %1: %2"
 msgid "Error downloading Spotify plugin"
 msgstr "Plugin Spotify - nieudane pobieranie"
 
-#: playlist/songloaderinserter.cpp:66
+#: playlist/songloaderinserter.cpp:66 playlist/songloaderinserter.cpp:145
 #, qt-format
 msgid "Error loading %1"
 msgstr "Błąd wczytywania %1"
@@ -3037,7 +3037,7 @@ msgstr "Wczytywanie strumienia"
 msgid "Loading tracks"
 msgstr "Wczytywanie ścieżek"
 
-#: playlist/songloaderinserter.cpp:154
+#: playlist/songloaderinserter.cpp:162
 msgid "Loading tracks info"
 msgstr "Wczytywanie informacji o utworze"
 
