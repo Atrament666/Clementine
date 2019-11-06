@@ -20,8 +20,9 @@
 # daschuer <daschuer@gmx.de>, 2012
 # Eduard Braun <eduard.braun2@gmx.de>, 2015-2016
 # El_Zorro_Loco <the.crazy.zorro@googlemail.com>, 2011-2012
-# Ettore Atalan <atalanttore@googlemail.com>, 2014-2018
+# Ettore Atalan <atalanttore@googlemail.com>, 2014-2019
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010
+# F M, 2019
 # geroldmittelstaedt <gerold.mittelstaedt@googlemail.com>, 2012
 # geroldmittelstaedt <gerold.mittelstaedt@googlemail.com>, 2012
 # Gregor S. <inactive+santy@transifex.com>, 2012
@@ -63,8 +64,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Clementine Music Player\n"
-"PO-Revision-Date: 2019-04-10 10:30+0000\n"
-"Last-Translator: hatstand <john.maguire@gmail.com>\n"
+"PO-Revision-Date: 2019-10-30 18:02+0000\n"
+"Last-Translator: F M\n"
 "Language-Team: German (http://www.transifex.com/davidsansome/clementine/language/de/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -397,7 +398,7 @@ msgid ""
 "played in the last 180 minutes.</p><p><span style=\" font-"
 "weight:600;\">Available fields: </span><span style=\" font-"
 "style:italic;\">%1</span>.</p></body></html>"
-msgstr ""
+msgstr "<html><head/><body><p>Ein Wort mit einem Feldnamen voranstellen, um die Suche auf dieses Feld zu beschränken, z.B. <span style=\" font-weight:600;\">artist:</span><span style=\" font-style:italic;\">Keks</span> durchsucht die Bibliothek nach allen Interpreten, die das Wort Keks enthalten, <span style=\" font-weight:600;\">playcount:</span><span style=\" font-style:italic;\">&gt;=2</span> durchsucht die Bibliothek nach Titeln, die mindestens zweimal wiedergegeben wurden, <span style=\" font-weight:600;\">lastplayed:</span>&lt;<span style=\" font-style:italic;\">1h30m</span> durchsucht die Bibliothek nach Titeln, die in den letzten 180 Minuten wiedergegeben wurden.</p><p><span style=\" font-weight:600;\">Verfügbare Felder: </span><span style=\" font-style:italic;\">%1</span>.</p></body></html>"
 
 #: ../bin/src/ui_librarysettingspage.h:198
 msgid ""
@@ -523,7 +524,7 @@ msgstr "Aktion"
 
 #: wiimotedev/wiimotesettingspage.cpp:103
 msgid "Activate/Deactivate Wii Remote"
-msgstr ""
+msgstr "Wii-Fernbedienung aktivieren/deaktivieren"
 
 #: internet/podcasts/addpodcastdialog.cpp:63
 msgid "Add Podcast"
@@ -820,11 +821,11 @@ msgstr "Neben den ursprünglichen Dateien"
 
 #: ../bin/src/ui_behavioursettingspage.h:370
 msgid "Alwa&ys hide the main window"
-msgstr ""
+msgstr "Clementine immer verstecken"
 
 #: ../bin/src/ui_behavioursettingspage.h:369
 msgid "Always show &the main window"
-msgstr ""
+msgstr "Clementine immer anzeigen"
 
 #: ../bin/src/ui_behavioursettingspage.h:384
 #: ../bin/src/ui_behavioursettingspage.h:404
@@ -916,7 +917,7 @@ msgstr "Initialen des Interpreten"
 
 #: ../bin/src/ui_behavioursettingspage.h:420
 msgid "As&k when saving"
-msgstr ""
+msgstr "Beim Speichern nachfragen"
 
 #: ../bin/src/ui_transcodedialog.h:225
 #: ../bin/src/ui_networkremotesettingspage.h:250
@@ -1358,8 +1359,8 @@ msgid "Comma separated list of class:level, level is 0-3"
 msgstr "Komma getrennte Liste mit »class:level« (Level ist 0-3)"
 
 #: ../bin/src/ui_behavioursettingspage.h:425
-msgid "Comma seperated list of prefix words to ignore when sorting"
-msgstr ""
+msgid "Comma separated list of prefix words to ignore when sorting"
+msgstr "Kommagetrennte Liste von Präfixen, die beim Sortieren ignoriert werden sollen"
 
 #: playlist/playlist.cpp:1435 smartplaylists/searchterm.cpp:384
 #: ui/organisedialog.cpp:79 ../bin/src/ui_edittagdialog.h:718
@@ -1634,7 +1635,7 @@ msgstr "Die Datenbank ist beschädigt. Bitte https://github.com/clementine-playe
 
 #: ../bin/src/ui_episodeinfowidget.h:133
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: playlist/playlist.cpp:1432 ../bin/src/ui_edittagdialog.h:715
 msgid "Date created"
@@ -1654,7 +1655,7 @@ msgstr "&Vorgabe"
 
 #: core/commandlineoptions.cpp:165
 msgid "Decrease the volume by 4 percent"
-msgstr ""
+msgstr "Lautstärke um 4 Prozent senken"
 
 #: core/commandlineoptions.cpp:167
 msgid "Decrease the volume by <value> percent"
@@ -1718,7 +1719,7 @@ msgstr "Lösche intelligente Wiedergabeliste"
 
 #: core/commandlineoptions.cpp:186
 msgid "Delete the currently playing song"
-msgstr ""
+msgstr "Den aktuell wiedergegebenen Titel löschen"
 
 #: ../bin/src/ui_organisedialog.h:245
 msgid "Delete the original files"
@@ -2132,7 +2133,7 @@ msgstr "Gesamte Sammlung"
 
 #: internet/podcasts/podcastservice.cpp:532
 msgid "Episode information"
-msgstr ""
+msgstr "Episodeninformation"
 
 #: ../bin/src/ui_equalizer.h:162 ../bin/src/ui_mainwindow.h:705
 msgid "Equalizer"
@@ -2649,7 +2650,7 @@ msgstr "Die Hardwareinformationen sind nur verfügbar, solange das Gerät angesc
 
 #: ../bin/src/ui_appearancesettingspage.h:325
 msgid "Hide playlist filter toolbar"
-msgstr ""
+msgstr "Verstecke Werkzeugleiste zur Wiedergabelistenfilterung"
 
 #: ../bin/src/ui_transcoderoptionsmp3.h:201
 msgid "High"
@@ -2667,7 +2668,7 @@ msgstr "Hoch (1024x1024)"
 
 #: ui/equalizer.cpp:128
 msgid "Hip Hop"
-msgstr ""
+msgstr "Hip-Hop"
 
 #: internet/subsonic/subsonicsettingspage.cpp:138
 msgid "Host not found, check server URL. Example: http://localhost:4040/"
@@ -2719,7 +2720,7 @@ msgstr "»The« in den Künstlernamen ignorieren"
 
 #: ../bin/src/ui_behavioursettingspage.h:423
 msgid "Ignore prefix word(s)"
-msgstr ""
+msgstr "Ignoriere Präfixwörter"
 
 #: ui/albumcoverchoicecontroller.cpp:44
 msgid "Images (*.png *.jpg *.jpeg *.bmp *.gif *.xpm *.pbm *.pgm *.ppm *.xbm)"
@@ -3283,7 +3284,7 @@ msgstr "Bibliothek auf Änderungen überwachen"
 
 #: core/song.cpp:460
 msgid "Monkey's Audio"
-msgstr ""
+msgstr "Monkey's Audio"
 
 #: ../bin/src/ui_playbacksettingspage.h:372
 msgid "Mono playback"
@@ -3471,7 +3472,7 @@ msgstr "Normaler Blocktyp"
 
 #: ../bin/src/ui_behavioursettingspage.h:428
 msgid "Normal duration (at least 4 minutes or half the track length)"
-msgstr ""
+msgstr "Normale Dauer (mindestens 4 Minuten oder die halbe Titellänge)"
 
 #: playlist/playlistsequence.cpp:203
 msgid "Not available while using a dynamic playlist"
@@ -3802,11 +3803,11 @@ msgstr "Mit der Wiedergabe beginnen, falls gerade nichts anderes abgespielt wird
 
 #: library/libraryview.cpp:396 ui/mainwindow.cpp:1815
 msgid "Play next"
-msgstr ""
+msgstr "Nächsten Titel wiedergeben"
 
 #: ui/mainwindow.cpp:1813
 msgid "Play selected tracks next"
-msgstr ""
+msgstr "Ausgewählte Titel als Nächstes wiedergeben"
 
 #: core/commandlineoptions.cpp:178
 msgid "Play the <n>th track in the playlist"
@@ -3862,13 +3863,13 @@ msgstr "Erweiterungsstatus:"
 
 #: ../bin/src/ui_podcastinfodialog.h:93
 msgid "Podcast Information"
-msgstr ""
+msgstr "Podcastinformation"
 
 #: internet/podcasts/podcastservice.cpp:437
 #: internet/podcasts/podcastservice.cpp:535
 #: internet/podcasts/podcastservice.cpp:539
 msgid "Podcast information"
-msgstr ""
+msgstr "Podcastinformation"
 
 #: internet/podcasts/podcastservice.cpp:133
 #: ../bin/src/ui_podcastsettingspage.h:250
@@ -3990,7 +3991,7 @@ msgstr "Psychedelisch"
 
 #: wiimotedev/wiimotesettingspage.cpp:246
 msgid "Push Wii Remote button"
-msgstr ""
+msgstr "Taste auf Wii-Fernbedienung drücken"
 
 #: ../bin/src/ui_wiimoteshortcutgrabber.h:121
 msgid "Push Wiiremote button"
@@ -4126,7 +4127,7 @@ msgstr "Bewegung der Wii-Fernbedienung merken"
 
 #: ../bin/src/ui_behavioursettingspage.h:371
 msgid "Remember from &last time"
-msgstr ""
+msgstr "Clementine so starten, wie es beendet wurde"
 
 #: ../bin/src/ui_playlistsaveoptionsdialog.h:99
 msgid "Remember my choice"
@@ -4579,7 +4580,7 @@ msgstr "Einstellungen"
 
 #: ../bin/src/ui_behavioursettingspage.h:429
 msgid "Short duration (at least 1 minute or half the track length)"
-msgstr ""
+msgstr "Kurze Dauer (mindestens 1 Minute oder die halbe Titellänge)"
 
 #: ../bin/src/ui_globalshortcutssettingspage.h:172
 msgid "Shortcut"
@@ -4945,7 +4946,7 @@ msgstr "Wiedergabe nach aktuellem Titel anhalten"
 
 #: ../bin/src/ui_behavioursettingspage.h:377
 msgid "Stop playback if song fails to play"
-msgstr ""
+msgstr "Wiedergabe anhalten, wenn Titel nicht abspielbar ist"
 
 #: core/globalshortcuts.cpp:56
 msgid "Stop playing after current track"
@@ -5536,7 +5537,7 @@ msgstr "VBR MP3"
 
 #: core/song.cpp:458
 msgid "VGM"
-msgstr ""
+msgstr "VGM"
 
 #: ../bin/src/ui_transcoderoptionsspeex.h:231
 msgid "Variable bit rate"
@@ -5624,7 +5625,7 @@ msgstr "Beim Programmstart"
 
 #: ../bin/src/ui_behavioursettingspage.h:427
 msgid "When calculating play counts, use"
-msgstr ""
+msgstr "Beim Ermitteln des Wiedergabezählers benutze"
 
 #: ../bin/src/ui_librarysettingspage.h:203
 msgid ""
@@ -5638,7 +5639,7 @@ msgstr "Beim Speichern einer Wiedergabeliste sollte der Dateipfad folgendes sein
 
 #: ../bin/src/ui_behavioursettingspage.h:422
 msgid "When sorting artists, albums and titles"
-msgstr ""
+msgstr "Beim Sortieren von Interpreten, Alben und Titeln"
 
 #: ../bin/src/ui_globalsearchsettingspage.h:147
 msgid "When the list is empty..."
@@ -5654,7 +5655,7 @@ msgstr "Breitband (WB)"
 
 #: widgets/osd.cpp:245
 #, qt-format
-msgid "Wii Remote %1: actived"
+msgid "Wii Remote %1: activated"
 msgstr "Wii-Fernbedienung %1 aktiviert"
 
 #: widgets/osd.cpp:257
@@ -5985,7 +5986,7 @@ msgstr "neueste zuerst"
 
 #: smartplaylists/searchterm.cpp:265
 msgid "not empty"
-msgstr ""
+msgstr "nicht leer"
 
 #: smartplaylists/searchterm.cpp:261
 msgid "not equals"
